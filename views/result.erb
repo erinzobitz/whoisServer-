@@ -1,1 +1,29 @@
-<h1> Your domain <%= @domain %> is <%= @state %></h1>
+<html>
+
+<script src="/javascript/jquery-1.8.2.min.js"></script>
+
+<script src="/javascript/bootstrap.min.js"></script>
+<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<style>
+
+div {
+	text-align: center;
+}
+
+h1 {
+	padding-bottom: 8px;
+}
+
+p {
+	font-size: 200%;
+}
+
+</style>
+
+<div class="hero-unit">
+	<p> Your domain </p> <h1><%= @domain %> </h1>
+	<p>is currently</p><h1><%= @state %>.</h1>	
+</div>
+
+</html>
