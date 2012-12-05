@@ -8,7 +8,7 @@ get '/' do
   erb :index
 end
 
-post '/whois' do
+get '/whois' do
 	puts params
 	w = Whois::Client.new
 	@state = "unavailable"
